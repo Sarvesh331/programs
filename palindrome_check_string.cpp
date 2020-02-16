@@ -15,7 +15,7 @@ bool palindrome_check(char *str)
 	return true;
 }
 
-int main()//main function
+//int main()//main function
 {
 	char ch[20];
 	cout<<"enter string for palindrom check::"<<endl;
