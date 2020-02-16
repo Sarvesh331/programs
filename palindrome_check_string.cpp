@@ -1,4 +1,4 @@
-#include<iostream>
+i#include<iostream>
 #include<string.h>
 using namespace std;
 bool palindrome_check(char *str)
@@ -15,7 +15,7 @@ bool palindrome_check(char *str)
 	return true;
 }
 
-int main()
+int main()//main function
 {
 	char ch[20];
 	cout<<"enter string for palindrom check::"<<endl;
