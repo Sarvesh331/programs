@@ -35,6 +35,6 @@ def test_stack():
     print(s.pop())
     print(s.pop())
     print(s.pop())
-    print(s.pop())
+
 
 test_stack()    
