@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>love calculator</title>
+</head>
+<body>
+<marquee style="font-size:50">LOVE CALCULATOR</marquee>
+<script>
+function myfunction()
+{
+
+var selfname=document.getElementById("selfname").value
+var lovername=document.getElementById("lovername").value
+
+
+if(selfname.trim()=="")
+{
+document.write("Sorry,you did not enter your name<br>Please refresh the page")
+return
+}
+
+if(lovername.trim()=="")
+{
+document.write("Sorry,you did not enter your lover's name<br>Please refresh the page")
+return
+}
+selfname=selfname.toLowerCase()
+lovername=lovername.toLowerCase()
+var diff=selfname.charCodeAt(0)-lovername.charCodeAt(0)
+if(diff<0)
+{diff=-diff}
+var x=diff+90
+if(x>100)
+{
+grt=x-100
+x-=(grt+6)
+}
+document.write("Hello "+selfname+" !!!!!")
+document.write("<br>Love percentage between "+selfname+" and "+lovername+" is "+x+" %")
+document.write("<br>Thank you for using our application!!!!!!")
+var z=document.createElement("button")
+
+
+}
+</script>
+<form>
+<label style="font-size:20" for="selfname">Your Name </label>
+<input style="font-size:20"type="text" id="selfname" required><br>
+<label style="font-size:20"for="lname">Lover's Name</label>
+<input style="font-size:20"type="text"id="lovername" required><br>
+</form>
+<button type="button"style="font-size:20"onclick="myfunction()">calculate</button>
+
+
+
+</body>
+
+</html>
